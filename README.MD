@@ -4,7 +4,7 @@ middleware/microservices - manage request from the  frontend and transmit  the r
 
 ## FRONT END STACK{HTML , CSS, BOOTSTRAP}
 ## WHAT IS HTML ? Hyper text markup langueage 
- -syntax : HTML syntax = html tags 
+ -syntax : HTML syntax = html tags gi
  <>::opening tag 
  context
  </> : :closing tag 
