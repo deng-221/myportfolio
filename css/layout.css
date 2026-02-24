@@ -1,0 +1,119 @@
+ #mycontainer{
+                display:grid;
+                grid-template-areas: 
+                'navbar navbar navbar navbar navbar navbar navbar '
+                'banner banner banner banner banner banner banner'
+                'hobbies hobbies  bio bio bio  gallery gallery'
+                'skills skills skills skills skills skills skills'
+                'footer footer footer footer footer footer footer'
+                ;
+            }
+            #navbar{
+                grid-area: navbar;
+                background-color:aquamarine;
+                padding: 10px;
+                margin: 10px;
+            }.navbar_class{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+            }
+            .navbar-class a{
+                text-decoration: none;
+                font-size: 20pc;
+                color: black;
+            }
+            .navbar-class a{
+                text-decoration: underline;
+                text-align: center;
+                font-size: medium;
+                color: black;
+            }
+
+            #banner{
+                grid-area: banner;
+                padding: 10px;
+                display:flex;
+                justify-self:center;
+                align-items: center;
+                border: 1px red;
+            }
+            #bio{
+                grid-area: bio;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                justify-content: center;
+                align-items:center;
+
+            }
+            #skills{
+                grid-area: skills;
+                padding: 10px;
+                margin: 10px  
+            }
+            .skills-badges{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin: 10px;
+            }
+            .skills-badges div{
+                background:black;
+                color:white;
+                border-radius: 8px;
+                font-weight: bold;
+                padding:10px 15px;
+
+            }
+            #hobbies{
+                grid-area: hobbies;
+                padding: 10px;
+                margin: 10px; 
+            }
+            #gallery{
+               grid-area: gallery;
+                background-color:azure;
+                padding: 10px;
+                margin: 10px; 
+            }
+            .gallery-grid{
+                display:grid;
+grid-template-columns: repeat(auto-fit, minmax(120px,lfr)) ;
+gap:10px;
+margin-top: 10px;
+            }
+            .gallery-grid img{ 
+                width: 100%;
+                border-radius: 8px;
+            }
+            #footer{
+                grid-area: footer;
+                background-color:brown;
+                padding: 10px;
+                margin: 10px; 
+            }
+             /* MEDIA QUERY */
+             @media only screen and (max-width: 768px){
+     #mycontainer{
+                background-color: bisque;
+                display: grid;
+                grid-template-areas: 
+                'navbar navbar navbar navbar navbar navbar navbar '
+                'banner banner banner banner banner banner banner'
+                'bio bio bio bio bio bio bio'
+                'gallery gallery gallery gallery gallery gallery gallery'
+                'skills skills skills skills skills skills skills'
+                'hobbies hobbies hobbies hobbies hobbies hobbies hobbies'
+                'footer footer footer footer footer footer footer'
+                ; 
+             }
+             .navbar-class{
+                flex-direction: column;
+                gap: 15px;
+             }
+             #banner{
+                margin: 10px ;
+             }
+             }
